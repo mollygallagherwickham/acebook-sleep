@@ -17,10 +17,10 @@ const UsersController = {
       DOB: req.body.DOB,
       email: req.body.email,
       password: req.body.password,
-      profile_picture: {
-        data: fs.readFileSync(path.join('./profile_pictures/' + req.file.filename)),
-        contentType: 'image/png'
-      }
+      // profile_picture: {
+      //   data: fs.readFileSync(path.join('./profile_pictures/' + req.file.filename)),
+      //   contentType: 'image/png'
+      // }
     }
     
     const user = new User(obj)
